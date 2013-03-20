@@ -45,15 +45,13 @@
 			console.log(d);
 
 			var e = [1,2,5,8,42,12];
-			var f = _.groupBy(e,function(num){
-				return num % 3;
+			var f = _.sortBy(e,function(num){
+				return Math.sin(num);
 			});
 
 			console.log(f);
 
-			var g = _.countBy(e,function(num){
-				return num % 2 == 0 ? 'even' :  'odd';
-			});
+			var g = _.sortBy(["me","i","and"],'length');
 
 			console.log(g);
 
