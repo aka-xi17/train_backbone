@@ -44,6 +44,17 @@
 			var d = _.contains(a,5);
 			console.log(d);
 
+			var e = [1,2,5,8,42,12];
+			var f = _.sortBy(e,function(num){
+				return Math.sin(num);
+			});
+
+			console.log(f);
+
+			var g = _.sortBy(["me","i","and"],'length');
+
+			console.log(g);
+
 		})();
 	</script>
 </body>
