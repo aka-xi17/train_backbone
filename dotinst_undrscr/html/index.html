@@ -44,6 +44,13 @@
 			var d = _.contains(a,5);
 			console.log(d);
 
+			var e = [1,2,5,8,42,12];
+			var f = _.groupBy(e,function(num){
+				return num % 3;
+			});
+
+			console.log(f);
+
 		})();
 	</script>
 </body>
