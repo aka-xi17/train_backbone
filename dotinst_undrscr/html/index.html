@@ -12,6 +12,21 @@
 			x = _.shuffle([2,8,10,3]);
 
 			console.log(x);
+
+			//each,map
+			/*
+				_.each([2,5,8],function(num){
+					console.log(num*2);
+				})
+			*/
+
+			var x = _.map([2,5,8],function(num){
+				return num * 2;
+			})
+
+			var y = _.shuffle(x);
+			console.log(y);
+
 		})();
 	</script>
 </body>
