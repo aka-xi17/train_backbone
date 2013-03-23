@@ -9,51 +9,32 @@
 	<script>
 		(function() {
 			var x;
-			x = _.shuffle([2,8,10,3]);
+			var user = {
+				name:"kiso",
+				score:80,
+				mail:""
+			};
 
+			x = _.keys(user);
+			console.log(x);
+			x = _.values(user);
+			console.log(x);
+			x = _.invert(user);
+			console.log(x);
+			x = _.has(user,"name");
 			console.log(x);
 
-			//each,map
-			/*
-				_.each([2,5,8],function(num){
-					console.log(num*2);
-				})
-			*/
+			x = _.isString(user.score);
+			console.log(x);
 
-			var z = _.map([2,5,8],function(num){
-				return num * 2;
-			});
+			x = _.isEmpty(user.mail);
+			console.log(x);
 
-			var y = _.shuffle(z);
-			console.log(y);
+			x = _.isNumber(user.score);
+			console.log(x);
 
-			var a = [2,5,6,44,12];
-
-			var b = _.find(a,function(num){
-				return num > 5;
-
-			});
-			console.log(b);
-
-			var c = _.filter(a,function(num){
-				return num > 5;
-
-			});
-			console.log(c);
-
-			var d = _.contains(a,5);
-			console.log(d);
-
-			var e = [1,2,5,8,42,12];
-			var f = _.sortBy(e,function(num){
-				return Math.sin(num);
-			});
-
-			console.log(f);
-
-			var g = _.sortBy(["me","i","and"],'length');
-
-			console.log(g);
+			x = _.isNull(user.mail);
+			console.log(x);
 
 		})();
 	</script>
