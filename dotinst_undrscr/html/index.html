@@ -55,6 +55,21 @@
 
 			console.log(g);
 
+			var h = [1,2,5];
+			var i = [5,2,8];
+			var j;
+
+			j = _.union(h,i);
+			console.log(j);
+
+			j = _.intersection(h,i);
+			console.log(j);
+			
+			j = _.difference(h,i);
+			console.log(j);
+
+			j = _.uniq([1,2,3,5,2,5]);
+			console.log(j);
 		})();
 	</script>
 </body>
