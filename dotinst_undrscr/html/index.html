@@ -46,11 +46,15 @@
 			j = _.intersection(h,i);
 			console.log(j);
 			
-			j = _.difference(h,i);
-			console.log(j);
-
-			j = _.uniq([1,2,3,5,2,5]);
-			console.log(j);
+			var b;
+			var c = [2,5,10,8];
+			b = _.chain(c)
+				 .shuffle()
+				 .map(function (num){
+				 	return num * 2;
+				 })
+				 .value();
+			console.log(b);
 
 			var a;
 			a = _.range(1,11,2);
