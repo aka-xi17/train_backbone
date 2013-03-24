@@ -50,6 +50,16 @@
 			var g = _.template(tpl,user);
 			console.log(g);
 
+			var b;
+			var c = [2,5,10,8];
+			b = _.chain(c)
+				 .shuffle()
+				 .map(function (num){
+				 	return num * 2;
+				 })
+				 .value();
+			console.log(b);
+
 			var a;
 			a = _.range(1,11,2);
 			console.log(a);
