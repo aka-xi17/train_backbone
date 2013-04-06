@@ -1,4 +1,5 @@
 (function() {
+
 	var Task = Backbone.Model.extend({
 		defaults:{
 			title:"something",
